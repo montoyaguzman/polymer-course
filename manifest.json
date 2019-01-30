@@ -1,0 +1,7 @@
+{
+  "name": "polymer-course",
+  "short_name": "polymer-course",
+  "description": "Application with examples for Polymer course",
+  "start_url": "/",
+  "display": "standalone"
+}
