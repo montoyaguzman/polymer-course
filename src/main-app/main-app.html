@@ -1,6 +1,7 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../containers/header-app.html">
+<link rel="import" href="../containers/filters-app.html">
 <link rel="import" href="../containers/workspace-app.html">
-
 
 <dom-module id="main-app">
   <template>
@@ -12,13 +13,12 @@
       }
 
     </style>
-    
-    <span>Hola en main</span>
 
+    <h2>Welcome MainApp!</h2>
 
+    <header-app></header-app>
+    <filters-app></filters-app>
     <workspace-app></workspace-app>
-
-
 
   </template>
 
@@ -28,17 +28,17 @@
      * @polymer
      */
     class MainApp extends Polymer.Element {
-      static get is() { return 'main-app'; }
+      static get is() { return 'main-app' }
       static get properties() {
         return {
-          prop1: {
+          nameComponent: {
             type: String,
-            value: 'main-app'
+            value: 'MainApp'
           }
         };
       }
     }
 
-    window.customElements.define(MainApp.is, MainApp);
+    window.customElements.define(MainApp.is, MainApp)
   </script>
 </dom-module>

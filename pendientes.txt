@@ -1,4 +1,4 @@
-Tareas para armar proyecto
+#Tareas para armar proyecto
 
 Estructura de carpetas y componentes 
 Estilos globales OK
