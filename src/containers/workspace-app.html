@@ -1,0 +1,51 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../shared-styles/shared-styles.html">
+
+<dom-module id="workspace-app">
+  
+  <template>
+    <!-- In container recommend write css inside, in components is better external file-->
+    <style include="shared-styles">
+      :host {
+        display: block;
+      }
+
+      p {
+        color: blue;
+      }
+
+      
+    </style>
+
+    <!-- Here wirte html code-->
+    <span>Hola en component</span>
+    <p>esto es blue</p>
+    <h2>[[nameComponent]] works!</h2>  
+  </template>
+  
+  <script>
+    class WorkspaceApp extends Polymer.Element {
+      
+      static get is() {
+        return 'workspace-app'
+      }
+
+      static get properties() {
+        return {
+          nameComponent: {
+            type: String,
+            value: 'workspace'
+          }
+        }
+      }
+
+      static get observers() {
+
+      }
+  
+    }
+
+
+    customElements.define(WorkspaceApp.is, WorkspaceApp);
+  </script>
+</dom-module>

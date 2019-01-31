@@ -1,0 +1,7 @@
+Tareas para armar proyecto
+
+Estructura de carpetas y componentes 
+Estilos globales OK
+Construccion de Bundled OK 
+Deploy 
+Test

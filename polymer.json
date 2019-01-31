@@ -1,7 +1,28 @@
 {
+  "entrypoint": "index.html",
+  "shell": "src/main-app/main-app.html",
+  "sources": ["./assest/css/styles.css"],
   "lint": {
     "rules": [
       "polymer-2"
     ]
-  }
+  },
+  "builds": [
+    {
+      "name": "bundled",
+      "bundle": true,
+      "js": {
+        "minify": true
+      },
+      "css": {
+        "minify": true
+      },
+      "html": {
+        "minify": true
+      },
+      "addServiceWorker": true,
+      "addPushManifest": true,
+      "insertPrefetchLinks": true
+    }
+  ]
 }

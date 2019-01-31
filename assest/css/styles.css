@@ -1,0 +1,10 @@
+body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  --app-primary-color: #003f8c;
+  --app-secondary-color: #0065bd;
+}
